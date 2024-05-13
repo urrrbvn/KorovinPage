@@ -1,0 +1,27 @@
+$main: red;
+$colWidth0: 500px;
+$colWidth1: calc(605/1429)*100%;
+$colWidth2: calc(824/1429)*100%;
+
+@mixin reset(){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #EBEBEB
+};
+
+@mixin flexCol(){
+    display: flex;
+    flex-direction: column;
+};
+@mixin flexRow(){
+    display: flex;
+    flex-direction: row;
+}
+@mixin adaptWidth($prop){
+    width: calc($prop / 1429) * 100%;
+}
+@mixin centerItems(){
+    justify-content: center;
+    align-items: center;
+}
